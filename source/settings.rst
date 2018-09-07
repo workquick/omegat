@@ -33,12 +33,11 @@
 Editor
 ======
 
-Options -> Editor
-
-Галочка у Insert the best fuzzy match
-Minimal similarity: 75
-Удалить "Fuzzy" в поле Prefix
-Галочка у Allow translation to be equal to source
+- Options -> Editor
+- Галочка у Insert the best fuzzy match
+- Minimal similarity: 75
+- Удалить "Fuzzy" в поле Prefix
+- Галочка у Allow translation to be equal to source
 
 .. figure::  images/editor_view.jpg
    :align:   center
@@ -92,6 +91,7 @@ http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html
 Сегментирование
 ===============
 
+Этот раздел можно пропустить при начальной настройке.
 Речь идет о дополнительных правилах разбивки текста на предложения.
 Добавлять правила можно в несколько этапов по мере работы с программой.
 
@@ -106,14 +106,14 @@ http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html
 
 Создайте правило для принудительной разбивки предложения.
 В поле break/exception поставьте галочку. В поле Before -
-"\.”",  а в поле after	"\s".
+``\.”``,  а в поле after	``\\s``.
 
 Остальные правила, чтобы программа не разбивала предложения
 
 =====================   ==============================
 before	                after
 =====================   ==============================
-стр\\.                  \\s
+стр\.                   \\s
 [А-Я]\\.[А-Я]\\.        \\s
 г\\.                    \\s[А-я]
 д\\.                    \\s\\d
@@ -161,10 +161,10 @@ Options -> Editor -> TM Matches
 
 Заменить весь текст в поле Match display template следующим текстом::
 
-``${id}. ${diff}``
-``${targetText}``
-``<${score}/${noStemScore}/${adjustedScore}%>``
-``${fileShortPath}``
+ | ${id}. ${diff}
+ | ${targetText}
+ | <${score}/${noStemScore}/${adjustedScore}%>
+ | ${fileShortPath}``
 
 .. figure::  images/TM_matches_view.JPG
    :align:   center

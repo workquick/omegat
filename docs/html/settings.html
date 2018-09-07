@@ -62,11 +62,13 @@
 </div>
 <div class="section" id="editor">
 <h2>Editor<a class="headerlink" href="#editor" title="Permalink to this headline">¶</a></h2>
-<p>Options -&gt; Editor</p>
-<p>Галочка у Insert the best fuzzy match
-Minimal similarity: 75
-Удалить “Fuzzy” в поле Prefix
-Галочка у Allow translation to be equal to source</p>
+<ul class="simple">
+<li>Options -&gt; Editor</li>
+<li>Галочка у Insert the best fuzzy match</li>
+<li>Minimal similarity: 75</li>
+<li>Удалить “Fuzzy” в поле Prefix</li>
+<li>Галочка у Allow translation to be equal to source</li>
+</ul>
 <div class="figure align-center">
 <img alt="_images/editor_view.jpg" src="_images/editor_view.jpg" />
 </div>
@@ -113,7 +115,8 @@ Minimal similarity: 75
 </div>
 <div class="section" id="id3">
 <h2>Сегментирование<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Речь идет о дополнительных правилах разбивки текста на предложения.
+<p>Этот раздел можно пропустить при начальной настройке.
+Речь идет о дополнительных правилах разбивки текста на предложения.
 Добавлять правила можно в несколько этапов по мере работы с программой.</p>
 <ul class="simple">
 <li>Options -&gt; Segmentation</li>
@@ -126,7 +129,7 @@ Minimal similarity: 75
 <p>Вот некоторые правила сегментирования. Они применяются сразу ко всем проектам</p>
 <p>Создайте правило для принудительной разбивки предложения.
 В поле break/exception поставьте галочку. В поле Before -
-“.””,  а в поле after  “s”.</p>
+<code class="docutils literal notranslate"><span class="pre">\.”</span></code>,  а в поле after        <code class="docutils literal notranslate"><span class="pre">\\s</span></code>.</p>
 <p>Остальные правила, чтобы программа не разбивала предложения</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -214,10 +217,10 @@ Minimal similarity: 75
 <h2>TM Matches<a class="headerlink" href="#tm-matches" title="Permalink to this headline">¶</a></h2>
 <p>Options -&gt; Editor -&gt; TM Matches</p>
 <p>Заменить весь текст в поле Match display template следующим текстом:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``${id}. ${diff}``
-``${targetText}``
-``&lt;${score}/${noStemScore}/${adjustedScore}%&gt;``
-``${fileShortPath}``
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>| ${id}. ${diff}
+| ${targetText}
+| &lt;${score}/${noStemScore}/${adjustedScore}%&gt;
+| ${fileShortPath}``
 </pre></div>
 </div>
 <div class="figure align-center">
