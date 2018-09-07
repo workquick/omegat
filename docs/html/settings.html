@@ -37,6 +37,17 @@
 <h1>Начальные настройки<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>Создание проекта<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Тут возможно будут непонятные слова, но это не важно, они быстро станут знакомыми.</p>
+<p>Посмотрите 10-минутное видео на сайте <a class="reference external" href="http://omegat.org/">http://omegat.org/</a> в разделе Get Started
+для ознакомления с программой в целом. Коммент к видео:</p>
+<ul class="simple">
+<li>Начальная часть про глоссарий в эксель - можно пока не обращать внимания - не существенно</li>
+<li>Про tmx-файл - важно, но он это вскользь упоминает, так что… ничего пока</li>
+<li>В видео на начало сентября 2018 года версия программы 4.0.1, мы устанавливаем другую, интерфейс в части содержания меню различается, shortcuts немного другие.</li>
+<li>в конце видео говорят про tags - забудем про это - мы это не используем (речь про форматирование)</li>
+<li>обратить внимание на структуру папок, которую создает программа при создании проекта</li>
+</ul>
+<p>Шаги для начала работы с программой:</p>
 <ul class="simple">
 <li>Создайте новую директорию под названием omegat (или любым удобным для вас), лучше в директории Documents</li>
 <li>Затем откройте программу OmegaT.</li>
@@ -47,15 +58,15 @@
 <li>В появившемся окне настроек выберите языки и отметьте галочкой Remove Tags – смотрите картинку ниже</li>
 <li>OK</li>
 </ul>
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id5">
 <img alt="_images/create_new_project00.jpg" src="_images/create_new_project00.jpg" />
 <p class="caption"><span class="caption-text">Создаем проект под названием sanctions-EN в директории omegat</span></p>
 </div>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id6">
 <img alt="_images/create_new_project01_remove_tags.jpg" src="_images/create_new_project01_remove_tags.jpg" />
 <p class="caption"><span class="caption-text">Языки и Remove Tags</span></p>
 </div>
-<div class="figure align-center" id="id6">
+<div class="figure align-center" id="id7">
 <img alt="_images/create_new_project02_proj_files_win_close.jpg" src="_images/create_new_project02_proj_files_win_close.jpg" />
 <p class="caption"><span class="caption-text">Это окно можно пока закрыть</span></p>
 </div>
@@ -75,12 +86,12 @@
 </div>
 <div class="section" id="c">
 <h2>Cпелл-чекеры<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
-<p>Чтобы в программе работала проверка орфограции, нужно</p>
+<p>Чтобы в программе работала проверка орфографии, нужно:</p>
 <ul class="simple">
-<li>Создать директорию spellcheckers (название не важно) в директ. omegat (можно в любом другом удобном месте)</li>
-<li>Затем Options -&gt; Preferences -&gt; Spellcherker</li>
+<li>Создать директорию spellcheckers (название не важно) в директории omegat (можно в любом другом удобном месте)</li>
+<li>Затем идем Options -&gt; Preferences -&gt; Spellcherker</li>
 <li>Отметить галочкой Automatically check the spelling of text</li>
-<li>Скоприровать url и перейти на эту страницу в интернете</li>
+<li>Скоприровать url и перейти на страницу по url в интернете в любом браузере</li>
 <li>Скачать файл en_US.zip и сохранить его в созднанной на этапе 1 папке spellcheckers</li>
 <li>Скачать файл ru_RU.zip и сохранить его там же</li>
 <li>Распаковать zip-файлы (не создавая при этом вложенные директории внутри папки spellcheckers)</li>
@@ -88,18 +99,18 @@
 <li>В поле Dictionaries already installed должны появиться словари</li>
 </ul>
 <p>См. картинки ниже</p>
-<div class="figure align-center" id="id7">
+<div class="figure align-center" id="id8">
 <img alt="_images/spellcheckers_en_US_zip_donwload.jpg" src="_images/spellcheckers_en_US_zip_donwload.jpg" />
 <p class="caption"><span class="caption-text">Скачивание файлов со словариями для орфографии</span></p>
 </div>
 <div class="figure align-center">
 <img alt="_images/spellcheckers_ru_RU_zip_donwload.jpg" src="_images/spellcheckers_ru_RU_zip_donwload.jpg" />
 </div>
-<div class="figure align-center" id="id8">
+<div class="figure align-center" id="id9">
 <img alt="_images/spellcheckers_unzipped_files.jpg" src="_images/spellcheckers_unzipped_files.jpg" />
 <p class="caption"><span class="caption-text">Распакованные файлы со словарями</span></p>
 </div>
-<div class="figure align-center" id="id9">
+<div class="figure align-center" id="id10">
 <img alt="_images/spellcheckers_view.jpg" src="_images/spellcheckers_view.jpg" />
 <p class="caption"><span class="caption-text">Так должно выглядеть в финале</span></p>
 </div>
@@ -128,8 +139,10 @@
 </ul>
 <p>Вот некоторые правила сегментирования. Они применяются сразу ко всем проектам</p>
 <p>Создайте правило для принудительной разбивки предложения.
-В поле break/exception поставьте галочку. В поле Before <code class="docutils literal notranslate"><span class="pre">\.”</span></code>,  а в поле after        <code class="docutils literal notranslate"><span class="pre">\s</span></code>.</p>
-<p>Остальные правила, чтобы программа не разбивала предложения там, где не надо</p>
+В поле break/exception поставьте галочку. В поле <em>before</em> впишите <code class="docutils literal notranslate"><span class="pre">\.”</span></code>,
+а в поле <em>after</em> пришите        <code class="docutils literal notranslate"><span class="pre">\s</span></code>.</p>
+<p>Остальные правила, чтобы программа не разбивала предложения там, где не надо.
+Перед этими правилами ставить галочку НЕ нужно.</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="41%" />
@@ -191,18 +204,18 @@
 </tr>
 </tbody>
 </table>
-<div class="figure align-center" id="id10">
+<div class="figure align-center" id="id11">
 <img alt="_images/segm_setup_00_init_view.jpg" src="_images/segm_setup_00_init_view.jpg" />
 <p class="caption"><span class="caption-text">Начальный вид</span></p>
 </div>
 <div class="figure align-center">
 <img alt="_images/segm_setup_01_add_my_rules_move_up.jpg" src="_images/segm_setup_01_add_my_rules_move_up.jpg" />
 </div>
-<div class="figure align-center" id="id11">
-<img alt="_images/segm_setup_02_my_rules_at_top.jpg" src="_images/segm_setup_02_my_rules_at_top.jpg" />
-<p class="caption"><span class="caption-text">Переменстили наши правила на самый верх</span></p>
-</div>
 <div class="figure align-center" id="id12">
+<img alt="_images/segm_setup_02_my_rules_at_top.jpg" src="_images/segm_setup_02_my_rules_at_top.jpg" />
+<p class="caption"><span class="caption-text">Переместили наши правила на самый верх</span></p>
+</div>
+<div class="figure align-center" id="id13">
 <img alt="_images/segm_setup_02_add_rules.jpg" src="_images/segm_setup_02_add_rules.jpg" />
 <p class="caption"><span class="caption-text">Пример добавленных правил</span></p>
 </div>
@@ -231,6 +244,10 @@ ${fileShortPath}
 <div class="section" id="view">
 <h2>View<a class="headerlink" href="#view" title="Permalink to this headline">¶</a></h2>
 <p>В меню View, отметьте первые две опции по цветам - Mark Translated/Untranslated Segments</p>
+</div>
+<div class="section" id="id4">
+<h2>Опционально<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Автозаполнение</p>
 </div>
 </div>
 
@@ -261,6 +278,7 @@ ${fileShortPath}
 <li class="toctree-l2"><a class="reference internal" href="#id3">Сегментирование</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tm-matches">TM Matches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#view">View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Опционально</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Работа в OmegaT</a></li>
