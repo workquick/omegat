@@ -128,9 +128,8 @@
 </ul>
 <p>Вот некоторые правила сегментирования. Они применяются сразу ко всем проектам</p>
 <p>Создайте правило для принудительной разбивки предложения.
-В поле break/exception поставьте галочку. В поле Before -
-<code class="docutils literal notranslate"><span class="pre">\.”</span></code>,  а в поле after        <code class="docutils literal notranslate"><span class="pre">\\s</span></code>.</p>
-<p>Остальные правила, чтобы программа не разбивала предложения</p>
+В поле break/exception поставьте галочку. В поле Before <code class="docutils literal notranslate"><span class="pre">\.”</span></code>,  а в поле after        <code class="docutils literal notranslate"><span class="pre">\s</span></code>.</p>
+<p>Остальные правила, чтобы программа не разбивала предложения там, где не надо</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="41%" />
@@ -142,52 +141,52 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>стр.</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">стр\.</span></code></td>
 <td>\s</td>
 </tr>
-<tr class="row-odd"><td>[А-Я].[А-Я].</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">[А-Я]\.[А-Я]\.</span></code></td>
 <td>\s</td>
 </tr>
-<tr class="row-even"><td>г.</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">г\.</span></code></td>
 <td>\s[А-я]</td>
 </tr>
-<tr class="row-odd"><td>д.</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">д\.</span></code></td>
 <td>\s\d</td>
 </tr>
-<tr class="row-even"><td>долл.</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">долл\.</span></code></td>
 <td>\s[США]|\s[а-я]</td>
 </tr>
-<tr class="row-odd"><td>[A-Z].[A-Z].</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">[A-Z]\.[A-Z]\.</span></code></td>
 <td>\s</td>
 </tr>
-<tr class="row-even"><td>U.S.</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">U\.S\.</span></code></td>
 <td>\s[a-z]|\sGovernment|\sLNG</td>
 </tr>
-<tr class="row-odd"><td>L.L.P.</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">L\.L\.P\.</span></code></td>
 <td>\s[a-z]</td>
 </tr>
-<tr class="row-even"><td>U.K.</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">U\.K\.</span></code></td>
 <td>\s</td>
 </tr>
-<tr class="row-odd"><td>Stat.</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">Stat\.</span></code></td>
 <td>\s\d</td>
 </tr>
-<tr class="row-even"><td>S.A.</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">S\.A\.</span></code></td>
 <td>\s[a-z]</td>
 </tr>
-<tr class="row-odd"><td>E.O.</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">E\.O\.</span></code></td>
 <td>\s[0-9]|\s[a-z]</td>
 </tr>
-<tr class="row-even"><td>U.S.C.</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">U\.S\.C\.</span></code></td>
 <td>\s\d</td>
 </tr>
-<tr class="row-odd"><td>SEC.</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">SEC\.</span></code></td>
 <td>\s\d</td>
 </tr>
-<tr class="row-even"><td>Sec.</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">Sec\.</span></code></td>
 <td>\s\d</td>
 </tr>
-<tr class="row-odd"><td>sec.</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">sec\.</span></code></td>
 <td>\s\d</td>
 </tr>
 </tbody>
