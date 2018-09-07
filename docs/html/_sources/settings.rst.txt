@@ -38,6 +38,7 @@ Options -> Editor
 Галочка у Insert the best fuzzy match
 Minimal similarity: 75
 Удалить "Fuzzy" в поле Prefix
+Галочка у Allow translation to be equal to source
 
 .. figure::  images/editor_view.jpg
    :align:   center
@@ -47,6 +48,7 @@ Cпелл-чекеры
 ============
 
 Чтобы в программе работала проверка орфограции, нужно
+
 - Создать директорию spellcheckers (название не важно) в директ. omegat (можно в любом другом удобном месте)
 - Затем Options -> Preferences -> Spellcherker
 - Отметить галочкой Automatically check the spelling of text
@@ -56,6 +58,7 @@ Cпелл-чекеры
 - Распаковать zip-файлы (не создавая при этом вложенные директории внутри папки spellcheckers)
 - В окне Preference - Spellcherker, нажав на кнопку Browse..., указать путь к папке с файлами спелл-чекера
 - В поле Dictionaries already installed должны появиться словари
+
 См. картинки ниже
 
 .. figure::  images/spellcheckers_en_US_zip_donwload.jpg
@@ -76,10 +79,10 @@ Cпелл-чекеры
 
    Так должно выглядеть в финале
 
-.. !::
+.. warning::
    Названия языков каждого из созданных проектов должны совпадать с языками в спелл-чекере.
 
-Открыв проект, перейдте Project -> Properties, и убедитесь, что там точно
+Открыв проект, перейдите Project -> Properties, и убедитесь, что там точно
 такие же названия языков, что и в Options -> Preferences -> Spellcherker,
 а именно en-us, ru-ru
 
@@ -90,7 +93,7 @@ http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html
 ===============
 
 Речь идет о дополнительных правилах разбивки текста на предложения.
-Добавлять правила можно в несколько этапов по мере работы с программойю
+Добавлять правила можно в несколько этапов по мере работы с программой.
 
 - Options -> Segmentation
 - Кнопка Add ближе к правому верхнему углу
@@ -101,34 +104,32 @@ http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html
 
 Вот некоторые правила сегментирования. Они применяются сразу ко всем проектам
 
-v - значит отметить галочкой, это правило для принудительной разбивки предложения
-Остальные правила наоборот, чтобы программа не разбивала предложения
+Создайте правило для принудительной разбивки предложения.
+В поле break/exception поставьте галочку. В поле Before -
+"\.”",  а в поле after	"\s".
 
-v=break	before	after
-=======	======	=====
-        стр\.   \s
-	      [А-Я]\.[А-Я]\.	\s
-	г\.	\s[А-я]
-	д\.	\s\d
-	долл\.	\s[США]|\s[а-я]
-	[A-Z]\.[A-Z]\.	\s
-	U\.S\.	\s[a-z]|\sGovernment|\sLNG
-	L\.L\.P\.	\s[a-z]
-	U\.K\.	\s
-	Stat\.	\s\d
-	S\.A\.	\s[a-z]
-	E\.O\.	\s[0-9]|\s[a-z]
-	U\.S\.C\.	\s\d
-	SEC\.	\s\d
-	Sec\.	\s\d
-	sec\.	\s\d
-v	\n	\p{Lu}
-v	\n	\(
-v	\n	"\(
-v	\n	“\(
-v	\.”	\s
-v	\n	"
-=======	======	=====
+Остальные правила, чтобы программа не разбивала предложения
+
+================ ============================
+before	         after
+================ ============================
+"стр\."          "\s"
+"[А-Я]\.[А-Я]\." "\s"
+"г\."            "\s[А-я]"
+"д\."            "\s\d"
+"долл\."         "\s[США]|\s[а-я]"
+"[A-Z]\.[A-Z]\." "\s"
+"U\.S\."         "\s[a-z]|\sGovernment|\sLNG"
+"L\.L\.P\."      "\s[a-z]"
+"U\.K\."         "\s"
+"Stat\."         "\s\d"
+"S\.A\."         "\s[a-z]"
+"E\.O\."         "\s[0-9]|\s[a-z]"
+"U\.S\.C\."      "\s\d"
+"SEC\."          "\s\d"
+"Sec\."          "\s\d"
+"sec\."          "\s\d"
+================ ============================
 
 .. figure::  images/segm_setup_00_init_view.jpg
    :align:   center
@@ -146,11 +147,12 @@ v	\n	"
 .. figure::  images/segm_setup_02_add_rules.jpg
    :align:   center
 
-   Добавляем правила
+   Пример добавленных правил
 
 Подробное описание правил в документации разработчиков:
-http://omegat.sourceforge.net/manual-latest/en/chapter.segmentation.html
-http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html
+
+- http://omegat.sourceforge.net/manual-latest/en/chapter.segmentation.html
+- http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html
 
 TM Matches
 ===========
@@ -159,10 +161,12 @@ Options -> Editor -> TM Matches
 
 Заменить весь текст в поле Match display template следующим текстом::
 
-"${id}. ${diff}"
-"${targetText}"
-"<${score}/${noStemScore}/${adjustedScore}%>"
-"${fileShortPath}"
+```
+${id}. ${diff}
+${targetText}
+<${score}/${noStemScore}/${adjustedScore}%>
+${fileShortPath}
+```
 
 .. figure::  images/TM_matches_view.JPG
    :align:   center

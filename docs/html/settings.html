@@ -47,15 +47,15 @@
 <li>В появившемся окне настроек выберите языки и отметьте галочкой Remove Tags – смотрите картинку ниже</li>
 <li>OK</li>
 </ul>
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id8">
 <img alt="_images/create_new_project00.jpg" src="_images/create_new_project00.jpg" />
 <p class="caption"><span class="caption-text">Создаем проект под названием sanctions-EN в директории omegat</span></p>
 </div>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id9">
 <img alt="_images/create_new_project01_remove_tags.jpg" src="_images/create_new_project01_remove_tags.jpg" />
 <p class="caption"><span class="caption-text">Языки и Remove Tags</span></p>
 </div>
-<div class="figure align-center" id="id6">
+<div class="figure align-center" id="id10">
 <img alt="_images/create_new_project02_proj_files_win_close.jpg" src="_images/create_new_project02_proj_files_win_close.jpg" />
 <p class="caption"><span class="caption-text">Это окно можно пока закрыть</span></p>
 </div>
@@ -65,40 +65,47 @@
 <p>Options -&gt; Editor</p>
 <p>Галочка у Insert the best fuzzy match
 Minimal similarity: 75
-Удалить “Fuzzy” в поле Prefix</p>
+Удалить “Fuzzy” в поле Prefix
+Галочка у Allow translation to be equal to source</p>
 <div class="figure align-center">
 <img alt="_images/editor_view.jpg" src="_images/editor_view.jpg" />
 </div>
 </div>
 <div class="section" id="c">
 <h2>Cпелл-чекеры<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
-<p>Чтобы в программе работала проверка орфограции, нужно
-- Создать директорию spellcheckers (название не важно) в директ. omegat (можно в любом другом удобном месте)
-- Затем Options -&gt; Preferences -&gt; Spellcherker
-- Отметить галочкой Automatically check the spelling of text
-- Скоприровать url и перейти на эту страницу в интернете
-- Скачать файл en_US.zip и сохранить его в созднанной на этапе 1 папке spellcheckers
-- Скачать файл ru_RU.zip и сохранить его там же
-- Распаковать zip-файлы (не создавая при этом вложенные директории внутри папки spellcheckers)
-- В окне Preference - Spellcherker, нажав на кнопку Browse…, указать путь к папке с файлами спелл-чекера
-- В поле Dictionaries already installed должны появиться словари
-См. картинки ниже</p>
-<div class="figure align-center" id="id7">
+<p>Чтобы в программе работала проверка орфограции, нужно</p>
+<ul class="simple">
+<li>Создать директорию spellcheckers (название не важно) в директ. omegat (можно в любом другом удобном месте)</li>
+<li>Затем Options -&gt; Preferences -&gt; Spellcherker</li>
+<li>Отметить галочкой Automatically check the spelling of text</li>
+<li>Скоприровать url и перейти на эту страницу в интернете</li>
+<li>Скачать файл en_US.zip и сохранить его в созднанной на этапе 1 папке spellcheckers</li>
+<li>Скачать файл ru_RU.zip и сохранить его там же</li>
+<li>Распаковать zip-файлы (не создавая при этом вложенные директории внутри папки spellcheckers)</li>
+<li>В окне Preference - Spellcherker, нажав на кнопку Browse…, указать путь к папке с файлами спелл-чекера</li>
+<li>В поле Dictionaries already installed должны появиться словари</li>
+</ul>
+<p>См. картинки ниже</p>
+<div class="figure align-center" id="id11">
 <img alt="_images/spellcheckers_en_US_zip_donwload.jpg" src="_images/spellcheckers_en_US_zip_donwload.jpg" />
 <p class="caption"><span class="caption-text">Скачивание файлов со словариями для орфографии</span></p>
 </div>
 <div class="figure align-center">
 <img alt="_images/spellcheckers_ru_RU_zip_donwload.jpg" src="_images/spellcheckers_ru_RU_zip_donwload.jpg" />
 </div>
-<div class="figure align-center" id="id8">
+<div class="figure align-center" id="id12">
 <img alt="_images/spellcheckers_unzipped_files.jpg" src="_images/spellcheckers_unzipped_files.jpg" />
 <p class="caption"><span class="caption-text">Распакованные файлы со словарями</span></p>
 </div>
-<div class="figure align-center" id="id9">
+<div class="figure align-center" id="id13">
 <img alt="_images/spellcheckers_view.jpg" src="_images/spellcheckers_view.jpg" />
 <p class="caption"><span class="caption-text">Так должно выглядеть в финале</span></p>
 </div>
-<p>Открыв проект, перейдте Project -&gt; Properties, и убедитесь, что там точно
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Названия языков каждого из созданных проектов должны совпадать с языками в спелл-чекере.</p>
+</div>
+<p>Открыв проект, перейдите Project -&gt; Properties, и убедитесь, что там точно
 такие же названия языков, что и в Options -&gt; Preferences -&gt; Spellcherker,
 а именно en-us, ru-ru</p>
 <p>Подробности или для лучшего понимания сайт разработчиков:
@@ -107,7 +114,7 @@ Minimal similarity: 75
 <div class="section" id="id3">
 <h2>Сегментирование<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Речь идет о дополнительных правилах разбивки текста на предложения.
-Добавлять правила можно в несколько этапов по мере работы с программойю</p>
+Добавлять правила можно в несколько этапов по мере работы с программой.</p>
 <ul class="simple">
 <li>Options -&gt; Segmentation</li>
 <li>Кнопка Add ближе к правому верхнему углу</li>
@@ -117,66 +124,104 @@ Minimal similarity: 75
 <li>Когда все или часть правил добавлены, нажимаем ок</li>
 </ul>
 <p>Вот некоторые правила сегментирования. Они применяются сразу ко всем проектам</p>
-<p>v - значит отметить галочкой, это правило для принудительной разбивки предложения
-Остальные правила наоборот, чтобы программа не разбивала предложения</p>
-<p>v=break before  after
-======= ======  =====</p>
-<blockquote>
-<div><dl class="docutils">
-<dt>стр.   s</dt>
-<dd>[А-Я].[А-Я].    s</dd>
-</dl>
-<p>г.     s[А-я]
-д.     sd
-долл.  s[США]|s[а-я]
-[A-Z].[A-Z].  s
-U.S.  s[a-z]|sGovernment|sLNG
-L.L.P.       s[a-z]
-U.K.  s
-Stat.  sd
-S.A.  s[a-z]
-E.O.  s[0-9]|s[a-z]
-U.S.C.       sd
-SEC.   sd
-Sec.   sd
-sec.   sd</p>
-</div></blockquote>
-<p>v       n      p{Lu}
-v       n      (
-v       n      “(
-v       n      “(
-v       .”     s
-v       n      ”
-======= ======  =====</p>
-<div class="figure align-center" id="id10">
+<p>Создайте правило для принудительной разбивки предложения.
+В поле break/exception поставьте галочку. В поле Before -
+“.””,  а в поле after  “s”.</p>
+<p>Остальные правила, чтобы программа не разбивала предложения</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">before</th>
+<th class="head">after</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>“стр.”</td>
+<td>“s”</td>
+</tr>
+<tr class="row-odd"><td>“[А-Я].[А-Я].”</td>
+<td>“s”</td>
+</tr>
+<tr class="row-even"><td>“г.”</td>
+<td>“s[А-я]”</td>
+</tr>
+<tr class="row-odd"><td>“д.”</td>
+<td>“sd”</td>
+</tr>
+<tr class="row-even"><td>“долл.”</td>
+<td>“s[США]|s[а-я]”</td>
+</tr>
+<tr class="row-odd"><td>“[A-Z].[A-Z].”</td>
+<td>“s”</td>
+</tr>
+<tr class="row-even"><td>“U.S.”</td>
+<td>“s[a-z]|sGovernment|sLNG”</td>
+</tr>
+<tr class="row-odd"><td>“L.L.P.”</td>
+<td>“s[a-z]”</td>
+</tr>
+<tr class="row-even"><td>“U.K.”</td>
+<td>“s”</td>
+</tr>
+<tr class="row-odd"><td>“Stat.”</td>
+<td>“sd”</td>
+</tr>
+<tr class="row-even"><td>“S.A.”</td>
+<td>“s[a-z]”</td>
+</tr>
+<tr class="row-odd"><td>“E.O.”</td>
+<td>“s[0-9]|s[a-z]”</td>
+</tr>
+<tr class="row-even"><td>“U.S.C.”</td>
+<td>“sd”</td>
+</tr>
+<tr class="row-odd"><td>“SEC.”</td>
+<td>“sd”</td>
+</tr>
+<tr class="row-even"><td>“Sec.”</td>
+<td>“sd”</td>
+</tr>
+<tr class="row-odd"><td>“sec.”</td>
+<td>“sd”</td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-center" id="id14">
 <img alt="_images/segm_setup_00_init_view.jpg" src="_images/segm_setup_00_init_view.jpg" />
 <p class="caption"><span class="caption-text">Начальный вид</span></p>
 </div>
 <div class="figure align-center">
 <img alt="_images/segm_setup_01_add_my_rules_move_up.jpg" src="_images/segm_setup_01_add_my_rules_move_up.jpg" />
 </div>
-<div class="figure align-center" id="id11">
+<div class="figure align-center" id="id15">
 <img alt="_images/segm_setup_02_my_rules_at_top.jpg" src="_images/segm_setup_02_my_rules_at_top.jpg" />
 <p class="caption"><span class="caption-text">Переменстили наши правила на самый верх</span></p>
 </div>
-<div class="figure align-center" id="id12">
+<div class="figure align-center" id="id16">
 <img alt="_images/segm_setup_02_add_rules.jpg" src="_images/segm_setup_02_add_rules.jpg" />
-<p class="caption"><span class="caption-text">Добавляем правила</span></p>
+<p class="caption"><span class="caption-text">Пример добавленных правил</span></p>
 </div>
-<p>Подробное описание правил в документации разработчиков:
-<a class="reference external" href="http://omegat.sourceforge.net/manual-latest/en/chapter.segmentation.html">http://omegat.sourceforge.net/manual-latest/en/chapter.segmentation.html</a>
-<a class="reference external" href="http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html">http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html</a></p>
+<p>Подробное описание правил в документации разработчиков:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://omegat.sourceforge.net/manual-latest/en/chapter.segmentation.html">http://omegat.sourceforge.net/manual-latest/en/chapter.segmentation.html</a></li>
+<li><a class="reference external" href="http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html">http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html</a></li>
+</ul>
 </div>
 <div class="section" id="tm-matches">
 <h2>TM Matches<a class="headerlink" href="#tm-matches" title="Permalink to this headline">¶</a></h2>
 <p>Options -&gt; Editor -&gt; TM Matches</p>
 <p>Заменить весь текст в поле Match display template следующим текстом:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;$</span><span class="si">{id}</span><span class="s2">. $</span><span class="si">{diff}</span><span class="s2">&quot;</span>
-<span class="s2">&quot;$</span><span class="si">{targetText}</span><span class="s2">&quot;</span>
-<span class="s2">&quot;&lt;$</span><span class="si">{score}</span><span class="s2">/$</span><span class="si">{noStemScore}</span><span class="s2">/$</span><span class="si">{adjustedScore}</span><span class="s2">%&gt;&quot;</span>
-<span class="s2">&quot;$</span><span class="si">{fileShortPath}</span><span class="s2">&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
 </pre></div>
 </div>
+<p>${id}. ${diff}
+${targetText}
+&lt;${score}/${noStemScore}/${adjustedScore}%&gt;
+${fileShortPath}
+<a href="#id4"><span class="problematic" id="id5">``</span></a><a href="#id6"><span class="problematic" id="id7">`</span></a></p>
 <div class="figure align-center">
 <img alt="_images/TM_matches_view.JPG" src="_images/TM_matches_view.JPG" />
 </div>
