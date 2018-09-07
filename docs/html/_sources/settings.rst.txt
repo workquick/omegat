@@ -113,7 +113,7 @@ http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html
 =====================   ==============================
 before	                after
 =====================   ==============================
-стр\.                   \\s
+стр\\\.                 \\s
 [А-Я]\\.[А-Я]\\.        \\s
 г\\.                    \\s[А-я]
 д\\.                    \\s\\d
@@ -161,10 +161,10 @@ Options -> Editor -> TM Matches
 
 Заменить весь текст в поле Match display template следующим текстом::
 
- | ${id}. ${diff}
- | ${targetText}
- | <${score}/${noStemScore}/${adjustedScore}%>
- | ${fileShortPath}``
+  ${id}. ${diff}
+  ${targetText}
+  <${score}/${noStemScore}/${adjustedScore}%>
+  ${fileShortPath}
 
 .. figure::  images/TM_matches_view.JPG
    :align:   center
