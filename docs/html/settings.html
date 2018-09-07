@@ -47,15 +47,15 @@
 <li>В появившемся окне настроек выберите языки и отметьте галочкой Remove Tags – смотрите картинку ниже</li>
 <li>OK</li>
 </ul>
-<div class="figure align-center" id="id8">
+<div class="figure align-center" id="id4">
 <img alt="_images/create_new_project00.jpg" src="_images/create_new_project00.jpg" />
 <p class="caption"><span class="caption-text">Создаем проект под названием sanctions-EN в директории omegat</span></p>
 </div>
-<div class="figure align-center" id="id9">
+<div class="figure align-center" id="id5">
 <img alt="_images/create_new_project01_remove_tags.jpg" src="_images/create_new_project01_remove_tags.jpg" />
 <p class="caption"><span class="caption-text">Языки и Remove Tags</span></p>
 </div>
-<div class="figure align-center" id="id10">
+<div class="figure align-center" id="id6">
 <img alt="_images/create_new_project02_proj_files_win_close.jpg" src="_images/create_new_project02_proj_files_win_close.jpg" />
 <p class="caption"><span class="caption-text">Это окно можно пока закрыть</span></p>
 </div>
@@ -86,18 +86,18 @@ Minimal similarity: 75
 <li>В поле Dictionaries already installed должны появиться словари</li>
 </ul>
 <p>См. картинки ниже</p>
-<div class="figure align-center" id="id11">
+<div class="figure align-center" id="id7">
 <img alt="_images/spellcheckers_en_US_zip_donwload.jpg" src="_images/spellcheckers_en_US_zip_donwload.jpg" />
 <p class="caption"><span class="caption-text">Скачивание файлов со словариями для орфографии</span></p>
 </div>
 <div class="figure align-center">
 <img alt="_images/spellcheckers_ru_RU_zip_donwload.jpg" src="_images/spellcheckers_ru_RU_zip_donwload.jpg" />
 </div>
-<div class="figure align-center" id="id12">
+<div class="figure align-center" id="id8">
 <img alt="_images/spellcheckers_unzipped_files.jpg" src="_images/spellcheckers_unzipped_files.jpg" />
 <p class="caption"><span class="caption-text">Распакованные файлы со словарями</span></p>
 </div>
-<div class="figure align-center" id="id13">
+<div class="figure align-center" id="id9">
 <img alt="_images/spellcheckers_view.jpg" src="_images/spellcheckers_view.jpg" />
 <p class="caption"><span class="caption-text">Так должно выглядеть в финале</span></p>
 </div>
@@ -130,8 +130,8 @@ Minimal similarity: 75
 <p>Остальные правила, чтобы программа не разбивала предложения</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="36%" />
-<col width="64%" />
+<col width="41%" />
+<col width="59%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">before</th>
@@ -139,68 +139,68 @@ Minimal similarity: 75
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>“стр.”</td>
-<td>“s”</td>
+<tr class="row-even"><td>стр.</td>
+<td>\s</td>
 </tr>
-<tr class="row-odd"><td>“[А-Я].[А-Я].”</td>
-<td>“s”</td>
+<tr class="row-odd"><td>[А-Я].[А-Я].</td>
+<td>\s</td>
 </tr>
-<tr class="row-even"><td>“г.”</td>
-<td>“s[А-я]”</td>
+<tr class="row-even"><td>г.</td>
+<td>\s[А-я]</td>
 </tr>
-<tr class="row-odd"><td>“д.”</td>
-<td>“sd”</td>
+<tr class="row-odd"><td>д.</td>
+<td>\s\d</td>
 </tr>
-<tr class="row-even"><td>“долл.”</td>
-<td>“s[США]|s[а-я]”</td>
+<tr class="row-even"><td>долл.</td>
+<td>\s[США]|\s[а-я]</td>
 </tr>
-<tr class="row-odd"><td>“[A-Z].[A-Z].”</td>
-<td>“s”</td>
+<tr class="row-odd"><td>[A-Z].[A-Z].</td>
+<td>\s</td>
 </tr>
-<tr class="row-even"><td>“U.S.”</td>
-<td>“s[a-z]|sGovernment|sLNG”</td>
+<tr class="row-even"><td>U.S.</td>
+<td>\s[a-z]|\sGovernment|\sLNG</td>
 </tr>
-<tr class="row-odd"><td>“L.L.P.”</td>
-<td>“s[a-z]”</td>
+<tr class="row-odd"><td>L.L.P.</td>
+<td>\s[a-z]</td>
 </tr>
-<tr class="row-even"><td>“U.K.”</td>
-<td>“s”</td>
+<tr class="row-even"><td>U.K.</td>
+<td>\s</td>
 </tr>
-<tr class="row-odd"><td>“Stat.”</td>
-<td>“sd”</td>
+<tr class="row-odd"><td>Stat.</td>
+<td>\s\d</td>
 </tr>
-<tr class="row-even"><td>“S.A.”</td>
-<td>“s[a-z]”</td>
+<tr class="row-even"><td>S.A.</td>
+<td>\s[a-z]</td>
 </tr>
-<tr class="row-odd"><td>“E.O.”</td>
-<td>“s[0-9]|s[a-z]”</td>
+<tr class="row-odd"><td>E.O.</td>
+<td>\s[0-9]|\s[a-z]</td>
 </tr>
-<tr class="row-even"><td>“U.S.C.”</td>
-<td>“sd”</td>
+<tr class="row-even"><td>U.S.C.</td>
+<td>\s\d</td>
 </tr>
-<tr class="row-odd"><td>“SEC.”</td>
-<td>“sd”</td>
+<tr class="row-odd"><td>SEC.</td>
+<td>\s\d</td>
 </tr>
-<tr class="row-even"><td>“Sec.”</td>
-<td>“sd”</td>
+<tr class="row-even"><td>Sec.</td>
+<td>\s\d</td>
 </tr>
-<tr class="row-odd"><td>“sec.”</td>
-<td>“sd”</td>
+<tr class="row-odd"><td>sec.</td>
+<td>\s\d</td>
 </tr>
 </tbody>
 </table>
-<div class="figure align-center" id="id14">
+<div class="figure align-center" id="id10">
 <img alt="_images/segm_setup_00_init_view.jpg" src="_images/segm_setup_00_init_view.jpg" />
 <p class="caption"><span class="caption-text">Начальный вид</span></p>
 </div>
 <div class="figure align-center">
 <img alt="_images/segm_setup_01_add_my_rules_move_up.jpg" src="_images/segm_setup_01_add_my_rules_move_up.jpg" />
 </div>
-<div class="figure align-center" id="id15">
+<div class="figure align-center" id="id11">
 <img alt="_images/segm_setup_02_my_rules_at_top.jpg" src="_images/segm_setup_02_my_rules_at_top.jpg" />
 <p class="caption"><span class="caption-text">Переменстили наши правила на самый верх</span></p>
 </div>
-<div class="figure align-center" id="id16">
+<div class="figure align-center" id="id12">
 <img alt="_images/segm_setup_02_add_rules.jpg" src="_images/segm_setup_02_add_rules.jpg" />
 <p class="caption"><span class="caption-text">Пример добавленных правил</span></p>
 </div>
@@ -214,14 +214,12 @@ Minimal similarity: 75
 <h2>TM Matches<a class="headerlink" href="#tm-matches" title="Permalink to this headline">¶</a></h2>
 <p>Options -&gt; Editor -&gt; TM Matches</p>
 <p>Заменить весь текст в поле Match display template следующим текстом:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``${id}. ${diff}``
+``${targetText}``
+``&lt;${score}/${noStemScore}/${adjustedScore}%&gt;``
+``${fileShortPath}``
 </pre></div>
 </div>
-<p>${id}. ${diff}
-${targetText}
-&lt;${score}/${noStemScore}/${adjustedScore}%&gt;
-${fileShortPath}
-<a href="#id4"><span class="problematic" id="id5">``</span></a><a href="#id6"><span class="problematic" id="id7">`</span></a></p>
 <div class="figure align-center">
 <img alt="_images/TM_matches_view.JPG" src="_images/TM_matches_view.JPG" />
 </div>
