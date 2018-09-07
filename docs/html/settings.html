@@ -60,14 +60,132 @@
 <p class="caption"><span class="caption-text">Это окно можно пока закрыть</span></p>
 </div>
 </div>
+<div class="section" id="editor">
+<h2>Editor<a class="headerlink" href="#editor" title="Permalink to this headline">¶</a></h2>
+<p>Options -&gt; Editor</p>
+<p>Галочка у Insert the best fuzzy match
+Minimal similarity: 75
+Удалить “Fuzzy” в поле Prefix</p>
+<div class="figure align-center">
+<img alt="_images/editor_view.jpg" src="_images/editor_view.jpg" />
+</div>
+</div>
 <div class="section" id="c">
 <h2>Cпелл-чекеры<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
+<p>Чтобы в программе работала проверка орфограции, нужно
+- Создать директорию spellcheckers (название не важно) в директ. omegat (можно в любом другом удобном месте)
+- Затем Options -&gt; Preferences -&gt; Spellcherker
+- Отметить галочкой Automatically check the spelling of text
+- Скоприровать url и перейти на эту страницу в интернете
+- Скачать файл en_US.zip и сохранить его в созднанной на этапе 1 папке spellcheckers
+- Скачать файл ru_RU.zip и сохранить его там же
+- Распаковать zip-файлы (не создавая при этом вложенные директории внутри папки spellcheckers)
+- В окне Preference - Spellcherker, нажав на кнопку Browse…, указать путь к папке с файлами спелл-чекера
+- В поле Dictionaries already installed должны появиться словари
+См. картинки ниже</p>
+<div class="figure align-center" id="id7">
+<img alt="_images/spellcheckers_en_US_zip_donwload.jpg" src="_images/spellcheckers_en_US_zip_donwload.jpg" />
+<p class="caption"><span class="caption-text">Скачивание файлов со словариями для орфографии</span></p>
+</div>
+<div class="figure align-center">
+<img alt="_images/spellcheckers_ru_RU_zip_donwload.jpg" src="_images/spellcheckers_ru_RU_zip_donwload.jpg" />
+</div>
+<div class="figure align-center" id="id8">
+<img alt="_images/spellcheckers_unzipped_files.jpg" src="_images/spellcheckers_unzipped_files.jpg" />
+<p class="caption"><span class="caption-text">Распакованные файлы со словарями</span></p>
+</div>
+<div class="figure align-center" id="id9">
+<img alt="_images/spellcheckers_view.jpg" src="_images/spellcheckers_view.jpg" />
+<p class="caption"><span class="caption-text">Так должно выглядеть в финале</span></p>
+</div>
+<p>Открыв проект, перейдте Project -&gt; Properties, и убедитесь, что там точно
+такие же названия языков, что и в Options -&gt; Preferences -&gt; Spellcherker,
+а именно en-us, ru-ru</p>
+<p>Подробности или для лучшего понимания сайт разработчиков:
+<a class="reference external" href="http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html">http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html</a></p>
 </div>
 <div class="section" id="id3">
 <h2>Сегментирование<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Речь идет о дополнительных правилах разбивки текста на предложения.
+Добавлять правила можно в несколько этапов по мере работы с программойю</p>
+<ul class="simple">
+<li>Options -&gt; Segmentation</li>
+<li>Кнопка Add ближе к правому верхнему углу</li>
+<li>Замените текст в поле New Language and Country на my-rules, а в соседнем поле на .*</li>
+<li>Кнопкой Move up поднимите эту новую строку на самый верх</li>
+<li>Затем, нажимаю другую кнопку Add, которая ниже и относится к Segmentation rules, нужно добавить правила сегментирования, приведенные ниже</li>
+<li>Когда все или часть правил добавлены, нажимаем ок</li>
+</ul>
+<p>Вот некоторые правила сегментирования. Они применяются сразу ко всем проектам</p>
+<p>v - значит отметить галочкой, это правило для принудительной разбивки предложения
+Остальные правила наоборот, чтобы программа не разбивала предложения</p>
+<p>v=break before  after
+======= ======  =====</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>стр.   s</dt>
+<dd>[А-Я].[А-Я].    s</dd>
+</dl>
+<p>г.     s[А-я]
+д.     sd
+долл.  s[США]|s[а-я]
+[A-Z].[A-Z].  s
+U.S.  s[a-z]|sGovernment|sLNG
+L.L.P.       s[a-z]
+U.K.  s
+Stat.  sd
+S.A.  s[a-z]
+E.O.  s[0-9]|s[a-z]
+U.S.C.       sd
+SEC.   sd
+Sec.   sd
+sec.   sd</p>
+</div></blockquote>
+<p>v       n      p{Lu}
+v       n      (
+v       n      “(
+v       n      “(
+v       .”     s
+v       n      ”
+======= ======  =====</p>
+<div class="figure align-center" id="id10">
+<img alt="_images/segm_setup_00_init_view.jpg" src="_images/segm_setup_00_init_view.jpg" />
+<p class="caption"><span class="caption-text">Начальный вид</span></p>
 </div>
-<div class="section" id="fuzzy-match">
-<h2>Fuzzy-match<a class="headerlink" href="#fuzzy-match" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="_images/segm_setup_01_add_my_rules_move_up.jpg" src="_images/segm_setup_01_add_my_rules_move_up.jpg" />
+</div>
+<div class="figure align-center" id="id11">
+<img alt="_images/segm_setup_02_my_rules_at_top.jpg" src="_images/segm_setup_02_my_rules_at_top.jpg" />
+<p class="caption"><span class="caption-text">Переменстили наши правила на самый верх</span></p>
+</div>
+<div class="figure align-center" id="id12">
+<img alt="_images/segm_setup_02_add_rules.jpg" src="_images/segm_setup_02_add_rules.jpg" />
+<p class="caption"><span class="caption-text">Добавляем правила</span></p>
+</div>
+<p>Подробное описание правил в документации разработчиков:
+<a class="reference external" href="http://omegat.sourceforge.net/manual-latest/en/chapter.segmentation.html">http://omegat.sourceforge.net/manual-latest/en/chapter.segmentation.html</a>
+<a class="reference external" href="http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html">http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html</a></p>
+</div>
+<div class="section" id="tm-matches">
+<h2>TM Matches<a class="headerlink" href="#tm-matches" title="Permalink to this headline">¶</a></h2>
+<p>Options -&gt; Editor -&gt; TM Matches</p>
+<p>Заменить весь текст в поле Match display template следующим текстом:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;$</span><span class="si">{id}</span><span class="s2">. $</span><span class="si">{diff}</span><span class="s2">&quot;</span>
+<span class="s2">&quot;$</span><span class="si">{targetText}</span><span class="s2">&quot;</span>
+<span class="s2">&quot;&lt;$</span><span class="si">{score}</span><span class="s2">/$</span><span class="si">{noStemScore}</span><span class="s2">/$</span><span class="si">{adjustedScore}</span><span class="s2">%&gt;&quot;</span>
+<span class="s2">&quot;$</span><span class="si">{fileShortPath}</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+<div class="figure align-center">
+<img alt="_images/TM_matches_view.JPG" src="_images/TM_matches_view.JPG" />
+</div>
+<p>Подробности на сайте разработчиков:
+<a class="reference external" href="http://omegat.sourceforge.net/manual-latest/en/chapter.user.interface.html#match.viewer">http://omegat.sourceforge.net/manual-latest/en/chapter.user.interface.html#match.viewer</a></p>
+</div>
+<div class="section" id="view">
+<h2>View<a class="headerlink" href="#view" title="Permalink to this headline">¶</a></h2>
+<p>В меню View, отметьте первые две опции по цветам - Mark Translated/Untranslated Segments</p>
 </div>
 </div>
 
@@ -93,9 +211,11 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Установка OmegaT</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Начальные настройки</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">Создание проекта</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editor">Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#c">Cпелл-чекеры</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">Сегментирование</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#fuzzy-match">Fuzzy-match</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tm-matches">TM Matches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#view">View</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Работа в OmegaT</a></li>
