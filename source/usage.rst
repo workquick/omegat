@@ -4,11 +4,11 @@
 Поиск
 =====
 
-- Поместите tmx-файлы в папку omegat/sanctions-EN/auto
-- Также поместите файл для перевода или пустой файл в omegat/sanctions-EN/source
-- Откройте проект: Project->Open или Project->Open Recent Project
-- Сверните или закройте окно Project Files
-- Нажмите Ctrl+F для вызова окна поиска по содержимому tmx-файлов
+- Поместить tmx-файлы в папку omegat/sanctions-EN/tm/auto
+- Также поместить файл для перевода или пустой файл в omegat/sanctions-EN/source
+- Открыть проект: Project->Open или Project->Open Recent Project
+- Свернуть или закрыть окно Project Files
+- Нажать Ctrl+F для вызова окна поиска по содержимому tmx-файлов
 
 Keyboard shortcuts
 ==================
