@@ -36,7 +36,7 @@
    Это окно можно закрыть
 
 Настройки Editor
-======
+================
 
 - Options -> Editor
 - Галочка у Insert the best fuzzy match
@@ -97,15 +97,14 @@ http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html
 ===============
 
 Скачать файл segmentation.conf
-и разместить его в папке C:\Users\username\AppData\Roaming\OmegaT,
+и разместить его в папке C:\\Users\\username\\AppData\\Roaming\\OmegaT,
 заменив существующий там файл.
 
 
 Другие правила можно добавлять постепенно по мере работы с программой.
 
-- Options -> Segmentation
+Options -> Segmentation
 
-Одно полезное правил д.
 Галочка в поле break/exception для принудительной разбивки предложений.
 
 Примеры правила сегментирования
@@ -131,19 +130,6 @@ before	                after
 ``sec\.``               \\s\\d
 =====================   ==============================
 
-.. figure::  images/segm_setup_00_init_view.jpg
-   :align:   center
-
-   Начальный вид
-
-.. figure::  images/segm_setup_01_add_my_rules_move_up.jpg
-   :align:   center
-
-.. figure::  images/segm_setup_02_my_rules_at_top.jpg
-   :align:   center
-
-   Переместили наши правила на самый верх
-
 .. figure::  images/segm_setup_02_add_rules.jpg
    :align:   center
 
@@ -155,7 +141,7 @@ before	                after
 - http://omegat.sourceforge.net/manual-latest/en/chapter.regexp.html
 
 TM Matches
-===========
+==========
 
 Options -> Editor -> TM Matches
 
@@ -169,15 +155,20 @@ Options -> Editor -> TM Matches
 .. figure::  images/TM_matches_view.JPG
    :align:   center
 
+Options -> Preferences -> Appearance -> Colors
+
+Найти Matches Deleted Active и отметить красным цветом
+
 Подробности на сайте разработчиков:
 http://omegat.sourceforge.net/manual-latest/en/chapter.user.interface.html#match.viewer
 
 View
 ====
 
-В меню View, отметить первые две опции по цветам - Mark Translated/Untranslated Segments
-
-Опционально
-===========
+В меню View, отметить первые две опции по цветам - Mark Translated/Untranslated Segments,
+а также Mark-Auto Populated Segments
 
 Автозаполнение
+==============
+
+Options -> Auto-completion. Отметить галочками все три опции.
