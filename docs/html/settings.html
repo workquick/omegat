@@ -48,7 +48,7 @@
 <li>Нажать Save</li>
 <li>В появившемся окне настроек выбрать языки en-us, ru-ru</li>
 <li>Отметить галочкой Remove Tags</li>
-<li>Нажаить OK</li>
+<li>Нажать OK</li>
 </ul>
 <div class="figure align-center" id="id5">
 <img alt="_images/create_new_project00.jpg" src="_images/create_new_project00.jpg" />
@@ -118,74 +118,12 @@
 </div>
 <div class="section" id="id3">
 <h2>Сегментирование<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Скачать файл segmentation.conf
+<p>Скачать файл <a class="reference download internal" href="_downloads/segmentation.conf" download=""><code class="xref download docutils literal notranslate"><span class="pre">segmentation.conf</span></code></a>
 и разместить его в папке C:\Users\username\AppData\Roaming\OmegaT,
 заменив существующий там файл.</p>
 <p>Другие правила можно добавлять постепенно по мере работы с программой.</p>
 <p>Options -&gt; Segmentation</p>
 <p>Галочка в поле break/exception для принудительной разбивки предложений.</p>
-<p>Примеры правила сегментирования</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="41%" />
-<col width="59%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">before</th>
-<th class="head">after</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">стр\.</span></code></td>
-<td>\s</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">[А-Я]\.[А-Я]\.</span></code></td>
-<td>\s</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">г\.</span></code></td>
-<td>\s[А-я]</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">д\.</span></code></td>
-<td>\s\d</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">долл\.</span></code></td>
-<td>\s[США]|\s[а-я]</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">[A-Z]\.[A-Z]\.</span></code></td>
-<td>\s</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">U\.S\.</span></code></td>
-<td>\s[a-z]|\sGovernment|\sLNG</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">L\.L\.P\.</span></code></td>
-<td>\s[a-z]</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">U\.K\.</span></code></td>
-<td>\s</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">Stat\.</span></code></td>
-<td>\s\d</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">S\.A\.</span></code></td>
-<td>\s[a-z]</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">E\.O\.</span></code></td>
-<td>\s[0-9]|\s[a-z]</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">U\.S\.C\.</span></code></td>
-<td>\s\d</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">SEC\.</span></code></td>
-<td>\s\d</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">Sec\.</span></code></td>
-<td>\s\d</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">sec\.</span></code></td>
-<td>\s\d</td>
-</tr>
-</tbody>
-</table>
 <div class="figure align-center" id="id11">
 <img alt="_images/segm_setup_02_add_rules.jpg" src="_images/segm_setup_02_add_rules.jpg" />
 <p class="caption"><span class="caption-text">Пример добавленных правил</span></p>
@@ -287,7 +225,7 @@ ${fileShortPath}
       &copy;2018, Alexey S.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.8</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
       
       |

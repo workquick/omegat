@@ -16,7 +16,7 @@
 - Нажать Save
 - В появившемся окне настроек выбрать языки en-us, ru-ru
 - Отметить галочкой Remove Tags
-- Нажаить OK
+- Нажать OK
 
 .. figure::  images/create_new_project00.jpg
    :align:   center
@@ -96,7 +96,7 @@ http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html
 Сегментирование
 ===============
 
-Скачать файл segmentation.conf
+Скачать файл :download:`segmentation.conf<./_downloads/segmentation.conf>`
 и разместить его в папке C:\\Users\\username\\AppData\\Roaming\\OmegaT,
 заменив существующий там файл.
 
@@ -106,29 +106,6 @@ http://omegat.sourceforge.net/manual-latest/en/chapter.spellchecker.html
 Options -> Segmentation
 
 Галочка в поле break/exception для принудительной разбивки предложений.
-
-Примеры правила сегментирования
-
-=====================   ==============================
-before	                after
-=====================   ==============================
-``стр\.``               \\s
-``[А-Я]\.[А-Я]\.``      \\s
-``г\.``                 \\s[А-я]
-``д\.``                 \\s\\d
-``долл\.``              \\s[США]|\\s[а-я]
-``[A-Z]\.[A-Z]\.``      \\s
-``U\.S\.``              \\s[a-z]|\\sGovernment|\\sLNG
-``L\.L\.P\.``           \\s[a-z]
-``U\.K\.``              \\s
-``Stat\.``              \\s\\d
-``S\.A\.``              \\s[a-z]
-``E\.O\.``              \\s[0-9]|\\s[a-z]
-``U\.S\.C\.``           \\s\\d
-``SEC\.``               \\s\\d
-``Sec\.``               \\s\\d
-``sec\.``               \\s\\d
-=====================   ==============================
 
 .. figure::  images/segm_setup_02_add_rules.jpg
    :align:   center
