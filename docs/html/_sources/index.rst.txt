@@ -8,3 +8,5 @@
    installation
    settings
    usage
+   tmx
+   contacts
