@@ -9,4 +9,5 @@
    settings
    usage
    tmx
+   translations
    contacts
